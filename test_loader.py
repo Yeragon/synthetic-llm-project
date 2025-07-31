@@ -1,5 +1,5 @@
 # test_loader.py
-
+# test git is Ok
 from src.data_loader import load_diabetes_data
 
 df = load_diabetes_data()
