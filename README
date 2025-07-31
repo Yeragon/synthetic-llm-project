@@ -1,0 +1,22 @@
+# Synthetic LLM-Tabular System
+
+This project explores synthetic tabular data generation using large language models (LLMs), focusing on realism, privacy preservation, and generalization. It integrates traditional evaluation metrics (JS/KS divergence).
+
+## Features
+
+- Visualize distributional similarity using JS/KS divergence.
+- Streamlit-based interactive front-end for exploration.
+- Dockerized environment for reproducibility.
+
+##
+
+docker build -t synthetic-llm .
+docker run -p 8501:8501 synthetic-llm
+
+docker build -t synthetic-llm-app .
+docker run -p 8501:8501 -v $(pwd):/app synthetic-llm-app
+
+openai.api_key = os.getenv("proj-t09Y4KHEsxkADFM5QnGjwTwnJOe_FBOqctBzLuZ0JE_8bIa8VoS-LvsPpUGjL0k1vgMsgXfmwsT3BlbkFJLL_OkUaemCM3DjJxSRLNrTqfkYf2p9KqnNPWh5_vMVKErtpY4qhvU91u5JB6vDov-8FihT8ZsA")
+
+streamlit run src/streamlit_app.py
+http://localhost:8501
