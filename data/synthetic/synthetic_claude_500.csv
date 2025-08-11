@@ -498,3 +498,4 @@ age,workclass,fnlwgt,education,educational-num,marital-status,occupation,relatio
 51,Private,234567,Bachelors,13,Married-civ-spouse,Prof-specialty,Wife,White,Female,0,0,40,United-States,>50K
 35,Private,167834,HS-grad,9,Married-civ-spouse,Transport-moving,Husband,Black,Male,0,0,50,United-States,<=50K
 61,Self-emp-not-inc,312345,Some-college,10,Married-civ-spouse,Craft-repair,Husband,White,Male,914,0,35,United-States,<=50K
+58,Federal-gov,890345,Masters,14,Married-civ-spouse,Prof-specialty,Husband,White,Male,0,0,40,United-States,>50K

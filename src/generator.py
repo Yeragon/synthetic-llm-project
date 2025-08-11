@@ -14,12 +14,17 @@ print(" currently in use API Key:", "Loaded" if api_key else "Not Found ")
 client = OpenAI(api_key=api_key)
 
 # Prompt
+# src/generator.py 中的 PROMPT_TEMPLATE 替换为 Adult 架构
 PROMPT_TEMPLATE = (
-    "Please generate a fictional diabetes patient record as a JSON object with the following fields: "
-    "'Pregnancies' (int), 'Glucose' (int), 'BloodPressure' (int), 'SkinThickness' (int), 'Insulin' (int), "
-    "'BMI' (float), 'DiabetesPedigreeFunction' (float), 'Age' (int), 'Outcome' (0 or 1). "
-    "Return only the JSON object, no explanation."
+    "Generate a fictional Adult income record as a JSON object with fields: "
+    "'age' (int), 'workclass' (string), 'fnlwgt' (int), 'education' (string), "
+    "'educational-num' (int), 'marital-status' (string), 'occupation' (string), "
+    "'relationship' (string), 'race' (string), 'gender' (string), "
+    "'capital-gain' (int), 'capital-loss' (int), 'hours-per-week' (int), "
+    "'native-country' (string), 'income' ('<=50K' or '>50K'). "
+    "Return only the JSON object."
 )
+
 
 def extract_json(text: str):
     """
