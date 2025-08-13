@@ -14,7 +14,7 @@ print(" currently in use API Key:", "Loaded" if api_key else "Not Found ")
 client = OpenAI(api_key=api_key)
 
 # Prompt
-# src/generator.py 中的 PROMPT_TEMPLATE 替换为 Adult 架构
+# src/generator.py 中的 PROMPT_TEMPLATE 
 PROMPT_TEMPLATE = (
     "Generate a fictional Adult income record as a JSON object with fields: "
     "'age' (int), 'workclass' (string), 'fnlwgt' (int), 'education' (string), "
